@@ -665,6 +665,32 @@
     </behaviour>
 -->
 
+    <behaviour name="Imx" object_type="sut" sut_type="QT" env="qt" input_type="*" version="*">
+        <module name="MobyBehaviour::QT::Imx" />
+        <methods>
+            <method name="gpu_usage">
+                <description>GPU resource usage</description>
+                <example>gpu_usage</example>
+            </method>
+            <method name="gpu_apps">
+                <description>List of applications which are using GPU</description>
+                <example>gpu_apps</example>
+            </method>
+            <method name="gpu_info">
+                <description>Information about the GPUs</description>
+                <example>gpu_info</example>
+            </method>
+            <method name="gpu_mem">
+                <description>Current GPU memory usage</description>
+                <example>gpu_mem</example>
+            </method>
+            <method name="gpu_version">
+                <description>GPU kernel driver version information</description>
+                <example>gpu_version</example>
+            </method>
+        </methods>
+    </behaviour>
+
     <behaviour name="Fps" object_type="*" sut_type="QT" env="qt" input_type="*" version="*">
 
 		<module name="MobyBehaviour::QT::Fps" />
